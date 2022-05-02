@@ -1,86 +1,29 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-$gray: white;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
 body {
-  background: $gray; // Using this variable
-  font-family: 'Roboto', sans-serif;
-  color: rgba(0,0,0,0.7);
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
 }
 
 h1 {
-  font-size: 48px;
   font-weight: 400;
 }
 
-h2 {
-  font-size: 16px;
-  font-weight: 400;
-}
+blockquote {
+  border-left: 6px solid #ddd;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
 
-p {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.banner {
-  background: red;
-  h1 {
-    font-size: 50px;
+  &.coach {
+    background-color: lightyellow;
+    p { font-weight: 400; }
   }
 }
 
-.container {
-  padding: 16px;
-}
-
-.message {
-  padding-left: 16px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-left-color: rgb(210, 210, 210);
-  border-left-width: 8px;
-  border-left-style: solid;
-  margin-bottom: 16px;
-}
-
-.yellow {
-  background-color: rgba(255, 255, 0, 0.2);
-}
-
-a {
-  font-size: 16px;
-  color: rgb(46, 119, 208);
-  text-decoration: none;
-  &:hover {
-    color: rgba(46, 119, 208, 0.5);
-  }
-}
-
-.button-ask {
-  font-size: 24px;
-  color: white;
-  background-color: rgb(46, 119, 208);
-  border-radius: 4px;
-  border: none;
-  padding: 16px;
-}
-
-.input-bar {
-  font-size: 24px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.1);
-  border-width: 1px;
-  padding: 16px;
-  width: 400px;
-}
-
-.form {
-  display: flex;
-  align-items: center;
+cite:before {
+  content: "—"
 }

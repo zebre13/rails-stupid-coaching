@@ -1,7 +1,12 @@
+<h1>Stupid Coaching</h1>
+
 <p>Ask your coach anything:</p>
-<div class="form">
-<form action="/answer" method="get">
-  <input type="text" name="question" value="<%= params[:question] %>" class="input-bar">
-  <input type="submit" value="Ask" class="button-ask">
+
+<form action="/answer" class="form-inline">
+  <div class="input-group input-group-lg">
+    <input type="text" name="question" class="form-control">
+    <div class="input-group-append">
+        <input type="submit" value="Ask" class="btn btn-primary">
+    </div>
+  </div>
 </form>
-</div>
