@@ -19,8 +19,15 @@ a {
 }
 .card-body {
   border-left: 8px solid rgb(206, 203, 203);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 #answer {
   background-color: #FFFEE1;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+#title {
+  margin-bottom: 24px;
 }
