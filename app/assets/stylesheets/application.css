@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  text-decoration: none;
+}
+.card-body {
+  border-left: 8px solid rgb(206, 203, 203);
+  margin-bottom: 16px;
+}
+#answer {
+  background-color: #FFFEE1;
+}
