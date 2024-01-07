@@ -1,13 +1,19 @@
 <div class="cards">
-  <div class="card-body">
-    <p><%= @question %></p>
-    <p><em>--You</em></p>
-  </div>
+  <blockquote class="card-body">
+    <p>
+      <% if @question.blank? %>
+        <%= "🧐" %>
+      <% else %>
+        <%= @question %>
+      <% end %>
+    </p>
+    <cite>You</cite>
+  </blockquote>
 
-  <div class="card-body" id="answer">
+  <blockquote class="card-body" id="coach">
     <p><strong><%= @answer %></strong></p>
-    <p><em>--Your coach</em></p>
-  </div>
+    <cite>Your coach</cite>
+  </blockquote>
 </div>
 
 <%= link_to "Ask a new question", ask_path %>

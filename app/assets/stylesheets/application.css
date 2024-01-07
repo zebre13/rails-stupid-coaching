@@ -21,7 +21,7 @@ a {
   border-left: 8px solid rgb(206, 203, 203);
   margin-bottom: 24px;
 }
-#answer {
+#coach {
   background-color: #FFFEE1;
 }
 .container {
@@ -30,4 +30,7 @@ a {
 }
 #title {
   margin-bottom: 24px;
+}
+cite:before {
+  content: "—";
 }
